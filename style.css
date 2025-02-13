@@ -2,12 +2,6 @@ body {
     background-image: linear-gradient(to top right, #283643, #314659);
 }
 
-@media screen and (max-width: 653px) {
-    .Header {
-        justify-content: center;
-    }
-}
-
 .Header {
     display: flex;
     flex-direction: row;
@@ -27,6 +21,12 @@ body {
     border-radius: 15px;
 
     padding: 15px 15px;
+}
+
+@media screen and (max-width: 653px) {
+    .Header {
+        justify-content: center;
+    }
 }
 
 #Header_img {
