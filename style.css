@@ -1,0 +1,102 @@
+body {
+    background-image: linear-gradient(to top right, #283643, #314659);
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+
+    background-color: #dbe1ea;
+    border-radius: 15px;
+
+    padding: 15px 15px;
+}
+
+#Header_img {
+    height: 100px;
+}
+
+#Header_img:hover {
+    text-shadow: 0 0 25px #3B4B5A;
+}
+
+.Header_Left {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#HeadText_Logo {
+    font-family: "Heebo", system-ui;
+    font-weight: 700;
+    color: #3B4B5A;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.Header_Right {
+    display: flex;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#Head_Line {
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    font-family: "Heebo", system-ui;
+}
+
+.Header_Mid {
+    display: inline-flex;
+}
+
+#HeadBnt_Left {
+
+}
+
+.Header_Btn {
+    position: relative;
+
+    color: #3B4B5A;
+    text-decoration: none;
+
+    font-family: "Heebo", system-ui;
+    font-weight: 600;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    transition: text-decoration 0.3s;
+}
+
+.Header_Btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px; 
+    background-color: #3B4B5A;
+    transition: width 0.3s ease, left 0.3s ease;
+
+}
+
+.Header_Btn:hover::before {
+    width: 100%;
+    left: 0;
+}
