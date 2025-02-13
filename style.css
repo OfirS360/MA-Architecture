@@ -2,6 +2,12 @@ body {
     background-image: linear-gradient(to top right, #283643, #314659);
 }
 
+@media screen and (max-width: 653px) {
+    .Header {
+        justify-content: center;
+    }
+}
+
 .Header {
     display: flex;
     flex-direction: row;
@@ -9,6 +15,7 @@ body {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    gap: 10px;
     
     position: fixed;
     top: 2%;
@@ -46,6 +53,7 @@ body {
 
 .Header_Right {
     display: flex;
+    justify-content: end;
 
     overflow-x: auto;
     white-space: nowrap;
@@ -57,14 +65,6 @@ body {
     margin-right: 15px;
 
     font-family: "Heebo", system-ui;
-}
-
-.Header_Mid {
-    display: inline-flex;
-}
-
-#HeadBnt_Left {
-
 }
 
 .Header_Btn {
